@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mengm</title>
+    <style>
+        *{
+        list-style: none;
+        color: rgb(168, 244, 244);
+        font-size: 20px;
+        text-decoration: none;
+    }
+       
+        .yijiliebiao {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; 
+            width: 120px; 
+        }
+        
+        .yijiliebiao > li {
+            position: relative; 
+            width: 100%;
+            height: 45px;
+            background-color: #d0d0d0;
+            color: #7fffd4;
+            font-size: 16px;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+        }
+       
+        .erjihezi {
+            display: none;
+            position: absolute;
+            left: 100%;
+            
+          
+        }
+        
+        .yijiliebiao > li:hover .erjihezi {
+            display: block;
+        }
+        
+        .erjiliebiao {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 12px; 
+        }
+       
+        .erjiliebiao > li {
+            width: 110px;
+            height: 45px;
+            background-color: #d0d0d0;
+            color: #7fffd4;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <ul class="yijiliebiao">
+       
+        <li>
+            娱乐
+            <div class="erjihezi">
+                <ul class="erjiliebiao">
+                    <li>电影</li> 
+                    <li>音乐</li>
+                    <li>综艺</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            科技
+            <div class="erjihezi">
+                <ul class="erjiliebiao">
+                    <li>数码</li>
+                    <li>手机</li>
+                    <li>电脑</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            美食
+            <div class="erjihezi">
+                <ul class="erjiliebiao">
+                    <li>中餐</li>
+                    <li>西餐</li>
+                    <li>甜点</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
